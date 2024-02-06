@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3c099f5c78.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script>
+    var popular = document.getElementsByClassName('cards-container')
+    var popular2 = document.getElementsByClassName('cards-container-2')
+    var popular3 = document.getElementsByClassName('cards-container-3')
+    var listmenu = document.getElementById("list-menu")
+    
+    function hello1(){
+        popular[0].style.display="flex";
+        popular[1].style.display="flex";
+        popular2[0].style.display="none";
+        popular2[1].style.display="none";
+        popular3[0].style.display="none";
+        popular3[1].style.display="none";
+        
+
+    }    
+    function hello2(){
+        popular[0].style.display="none";
+        popular[1].style.display="none";
+        popular2[0].style.display="flex";
+        popular2[1].style.display="flex";
+        popular3[0].style.display="none";
+        popular3[1].style.display="none";
+  
+
+    }   
+    function hello3(){
+        popular3[0].style.display="flex";
+        popular3[1].style.display="flex";
+        popular[0].style.display="none";
+        popular[1].style.display="none";
+        popular2[0].style.display="none";
+        popular2[1].style.display="none";
+
+
+    }
+
+    let pop= document.getElementsByClassName("prod-popup");
+      function popup(a){
+        for (let index = 0; index < pop.length; index++) {
+            pop[index].style.display="none";
+            
+        }
+        pop[a].style.display="flex";
+        
+           
+           
+      }
+
+     
+      function remove(){
+        for (let index = 0; index < pop.length; index++) {
+            pop[index].style.display="none";
+            
+ }
+}
+
+ </script>
+    <title>Fashion Fusion</title>
+</head>
+<body>
+    
+    <div class="header-img">
+        <div class="banner-text">
+        <h1>FRESH YOUR SOUL</h1>
+        <h2>Spring Summer </h2>
+        <h2>Fashion Collection </h2>
+        <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration in <br>some form , by injected humor</p>
+        </div>
+        
+    <h1 class="header"><span class="i">Fashion</span>Fusion</h1>
+    <ul id="list-menu">
+        <li><a href="">about us</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Hot Deals </a></li>
+        <li><a href="">FAQs</a></li>
+        <li><a href="">Pricing</a></li></ul>
+       
+    <ul class="list-container">
+        <li class="list-item"><a  class="list-link" href="">HOME</a></li>
+        <li class="list-item" ><a class="list-link" href="#Items-2">COLLECTIONS</a></li>
+        <li class="list-item"><a class="list-link" href="#Items-1">BLOGS</a></li>
+        <li class="list-item"><a class="list-link" href="#Items-3">SALE</a></li>
+        <li class="list-item"><a class="list-link" href="#footer">CONTACT US</a></li>
+    </ul>
+
+    </div>
+    <div class="img-container-1">
+        <div class="img-1"><img src="https://ss-ilove.myshopify.com/cdn/shop/files/v2-bg2.png?v=1614738376" alt="" width="100%"></div>
+        <div class="img-1"><img src="image-3.png" alt="" width="100%"></div>
+    </div>
+
+
+    <div id="popular">
+        <h1 id="Items-2">Popular In Store</h1>
+    <ul class="list-container">
+        <li class="list-item" onclick="hello1()"><a class="list-link">NEW COLLECTION</a></li>
+        <li class="list-item" onclick="hello2()"><a class="list-link">CLOTHERS</a></li>
+        <li class="list-item" onclick="hello3()"><a class="list-link">SHOES</a></li>
+        <li class="list-item"><a class="list-link">ACCESSORIES</a></li>
+    </ul>
+    <div class="cards-container">
+        <a href="#0" class="a-prod">
+            <div  onclick="popup(0)"class="cards-info-1">
+                <div class="card-img-1"></div>
+                <div  class="cards-text">
+                    <h3>Women's Top  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$321.00</span> </h3>
+                    <h4 class="dilac">dilac express</h4>
+             </div>
+            
+            </div>
+        </a>
+
+
+
+        <a href="#0" class="a-prod">
+            <div class="cards-info-1">
+                <div onclick="popup(1)"class="card-img-2"></div>
+                 <div class="cards-text">
+                     <h3>Casual Shoes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$64.00</span>  </h3> 
+                     <h4 class="dilac" >AMAZON</h4>
+              </div>
+             </div>
+        </a>
+
+
+
+        <a href="#0" class="a-prod">
+            <div class="cards-info-1">
+                <div onclick="popup(2)" class="card-img-3"></div>
+                <div class="cards-text">
+                    <h3>Eye Glasses &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$55.00</span></h3>
+                    <h4 class="dilac" id="0">dilac express</h4>
+             </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/17_fdc6dd7e-09cc-49bd-8deb-e5a055869662_large.jpg?v=1507169540" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Women's Top</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$321.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn" >BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid  fa-xmark"></i></h2>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/11_7757c23f-d83c-474e-8ce5-bb12922cde18_large.jpg?v=1507169221" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Casual Shoes</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$64.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn">BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid fa-xmark"></i></h2>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/18_7907ad05-8984-40ca-b365-8e31e5490b4c_large.jpg?v=1507168872" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Eye Glasses</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$55.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn">BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid fa-xmark"></i></h2>
+    </div>
+
+    
+
+
+
+    <div class="cards-container-2">
+        <div  class="cards-info-1">
+            <div class="card-img-clothers-1"></div>
+            <div  class="cards-text">
+                <h3>Jacket   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$226.00</span> </h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-clothers-2"></div>
+            <div class="cards-text">
+                <h3>Casual Shoes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$169.00</span>  </h3> 
+                <h4 class="dilac">AMAZON</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-clothers-3"></div>
+            <div class="cards-text">
+                <h3>Handbag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$33.00</span></h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+    </div>
+
+    <div class="cards-container-2">
+        <div  class="cards-info-1">
+            <div class="card-img-clothers-4"></div>
+            <div  class="cards-text">
+                <h3>Women's Top  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$321.00</span> </h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info-1">
+           <div class="card-img-clothers-5"></div>
+            <div class="cards-text">
+                <h3>Casual Shoes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$64.00</span>  </h3> 
+                <h4 class="dilac">AMAZON</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-clothers-6"></div>
+            <div class="cards-text">
+                <h3>Eye Glasses &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$55.00</span></h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+    </div>
+
+    <div class="cards-container-3">
+        <div  class="cards-info-1">
+            <div class="card-img-dresses-1"></div>
+            <div  class="cards-text">
+                <h3>Sonet Chorofa  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$430.00</span> </h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-dresses-2"></div>
+            <div class="cards-text">
+                <h3>Nostrum Cotidi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$90.00</span>  </h3> 
+                <h4 class="dilac">AMAZON</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-dresses-3"></div>
+            <div class="cards-text">
+                <h3>Morbi Vulputate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$200.00</span></h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+    </div>
+
+    <div class="cards-container-3">
+        <div  class="cards-info-1">
+            <div class="card-img-dresses-4"></div>
+            <div  class="cards-text">
+                <h3>Pharetra Luctus  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$222.00</span> </h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info-1">
+           <div class="card-img-dresses-5"></div>
+            <div class="cards-text">
+                <h3>Euismod Leodi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">$310.00</span>  </h3> 
+                <h4 class="dilac">AMAZON</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info-1">
+            <div class="card-img-dresses-6"></div>
+            <div class="cards-text">
+                <h3>Vitae Dicta Sunt &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$499.00</span></h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+    </div>
+
+
+    <div class="cards-container">
+        <a href="#1" class="a-prod">
+            <div  onclick="popup(3)"class="cards-info-1">
+                <div class="card-img-4"></div>
+                <div  class="cards-text">
+                    <h3>Casual Shoes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="price">$169.00</span> </h3>
+                    <h4 class="dilac">dilac express</h4>
+             </div>
+            
+            </div>
+        </a>
+
+
+
+        <a href="#1" class="a-prod">
+            <div onclick="popup(4)"class="cards-info-1">
+                <div class="card-img-5"></div>
+                <div class="cards-text">
+                    <h3>Handbag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="price">$33.00</span>  </h3> 
+                    <h4 class="dilac">dilac express</h4>
+             </div>
+            </div>
+        </a>
+
+
+
+        <a href="#1" class="a-prod">
+            <div onclick="popup(5)" class="cards-info-1">
+                <div class="card-img-6"></div>
+                <div class="cards-text">
+                    <h3>Mevin Cupim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>$85.00</span></h3>
+                    <h4 class="dilac" id="1">Luxury</h4>
+             </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/16_3d418c0e-864e-4bd0-b51a-a793bbd973e5_large.jpg?v=1507169394" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Casual Shoes</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$169.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn">BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid fa-xmark"></i></h2>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/20_912c36cf-f663-4459-810b-e979dd76bfb1_large.jpg?v=1507169015" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Hand Bag</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$33.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn">BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid fa-xmark"></i></h2>
+    </div>
+
+    <div class="prod-popup">
+        <img src="//ss-ilove.myshopify.com/cdn/shop/products/14_7863fe2c-b2c9-49a3-803c-94ef6455b13f_large.jpg?v=1507168758" alt="" height="248px" width="248px">
+        <div class="popup-text">
+            <span class="popup-heading">Wrist Watch</span>
+            <span class="popup-body">
+
+                AVALILABILITY
+                : IN STOCK
+                &nbsp;  &nbsp;  &nbsp;
+                PRODUCT TYPE
+                : AMAZON </span>
+            <span class="popup-price">$85.00</span>
+            <span class="popup-body-2">
+                Ipsum kevin leberkas pork belly, in occaecat laborum nisi lorem aliquip culpa shank fatback. Andouille eu salami, mollit short loin filet mignon culpa. Fatback rump kielbasa, beef drumstick... 
+            </span>
+            <button class="popup-btn">CONNECT TO CRYPTO WALLET</button>
+            <button class="popup-btn">BUY NOW</button>
+        </div>
+        
+        <h2 onclick="remove()"><i class=" hi fa-solid fa-xmark"></i></h2>
+    </div>
+
+
+    <div class="img-container-1">
+        <div class="img-1"><img src="image-5.png" alt="" width="100%"></div>
+        <div class="img-1"><img src="image-4.png" alt="" width="100%"></div>
+    </div>
+    </div>
+
+    <h1 id="Items-3">Latest Items</h1>
+    <div class="cards-container-1">
+        <div  class="cards-info">
+            <div><img src="https://ss-ilove.myshopify.com/cdn/shop/products/19_200008d5-4863-4790-a35f-c83133ed4fc4_270x384.jpg?v=1507169647" alt="" ></div>
+            <div  class="cards-text">
+                <h3>Jacket  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">226$</span> </h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info">
+            <div><img src="https://ss-ilove.myshopify.com/cdn/shop/products/17_fdc6dd7e-09cc-49bd-8deb-e5a055869662_270x384.jpg?v=1507169540" alt=""></div>
+            <div class="cards-text">
+                <h3>Women's Top  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="price">321$</span>  </h3> 
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info">
+            <div><img src="https://ss-ilove.myshopify.com/cdn/shop/products/16_3d418c0e-864e-4bd0-b51a-a793bbd973e5_270x384.jpg?v=1507169394" alt=""></div>
+            <div class="cards-text">
+                <h3>Casual Shoes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>226$</span></h3>
+                <h4 class="dilac">dilac express</h4>
+         </div>
+        </div>
+    </div>
+
+    
+    <img class="image-1" src="https://ss-ilove.myshopify.com/cdn/shop/files/bg-video.png?v=1614791982" alt="">
+
+
+
+    <h1 id="Items-1">From the Blog</h1>
+    <div class="cards-container-blog">
+        <div  class="cards-info-2">
+            <div class="img-wrap"> <img src="https://ss-ilove.myshopify.com/cdn/shop/articles/14_570x310.jpg?v=1504840069" alt="" ></div>
+            <div  class="cards-text">
+                <span class="date-1">SEP 07,2017</span> <h3 class="quote">Combine Your Favourite Fashion</h3> 
+                <h4 class="text">It is a long established fact that a reader will be distracted by the readable...</h4>
+         </div>
+        
+        </div>
+
+
+
+        <div class="cards-info-2">
+            <div class="img-wrap"><img src="https://ss-ilove.myshopify.com/cdn/shop/articles/11_6038b51f-bdf5-4649-9fa0-6795371d45b4_570x310.jpg?v=1504839965" alt=""></div>
+            <div class="cards-text">
+                <span class="date-2">SEP 07,2017</span> <h3 class="quote">Thurmond's 1948 Presidential</h3> 
+                <h4 class="text">It is a long established fact that a reader will be distracted by the readable...</h4>
+         </div>
+        </div>
+
+
+
+        <div class="cards-info-2">
+            <div><img src="https://ss-ilove.myshopify.com/cdn/shop/articles/12_570x310.jpg?v=1504839934" alt="" width="100%"></div>
+            <div class="cards-text">
+                <h4 class="date-3">SEP 07,2017</h4> <h3 class="quote">Vivamus Quis Ornare Nisl</h3> 
+                <h4 class="text">It is a long established fact that a reader will be distracted by the readable...</h4>
+         </div>
+        </div>
+    </div>
+    <hr style="border-width: 2px">
+    <div class="search">
+        <div class="search_2">
+            <input style="outline: none;" type="text" placeholder="Email address" name-="search">
+            <a class="sub_btn" href="">SUBSCRIBE</a>
+        </div>
+        
+    </div>
+    <div id="footer">
+        <ul class="footer-list">
+            <li class="items">CONTACT US</li>
+            <li class="items">FAQ'S</li>
+            <li class="items">PRIVACY</li>
+            <li class="items">TERM & CONDITIONS</li>
+            <li class="items">FIND A STORE</li>
+            <li class="items">CAREERS</li>
+            <li class="items-1">USD</li>
+        </ul>
+        <p class="p-1">SS ILOVE © 2017 Demo Store. All Rights Reserved. Designed by <a class="RevoTheme" href="">RevoTheme.com</a></p>
+    </div>
+
+
+</body>
+</html>

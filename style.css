@@ -1,0 +1,772 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0%;
+    
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    animation: appear 1.5s ease-in-out;
+
+    
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.i{
+    background: #01020D;
+background: linear-gradient(to top left, #01020D 0%, #2D26FF 69%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+.header{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2%;
+    
+}
+.banner-text{
+    position: absolute;
+    z-index: 1;
+    margin-top: 180px;
+    margin-left: 20vw;
+    animation: side-anim 1s ease-in-out;
+    
+}
+.banner-text h1{
+    color: white;
+    font-weight: 80;
+    letter-spacing: 3px;
+    font-size: 27px;
+    line-height: normal;
+}
+.banner-text h2{
+    color: white;
+    font-size: 68px;
+    margin: 0%;
+    font-family: Playflair Display;
+    font-weight: 100;
+}
+.banner-text p{
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: Playflair Display;
+}
+@keyframes side-anim{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.header-img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://ss-ilove.myshopify.com/cdn/shop/files/v2-slide1_414a4529-5222-425c-b036-5daeae4bd1b1_x1024.png?v=1614738517);
+    background-attachment: fixed;
+    background-position-x: 50px;
+   
+
+}
+#list-menu{
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 49.5vw;
+    margin-top: 3vh;
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  background-color: white;
+  padding: 25px;
+  line-height: 35px;
+ 
+}
+.list-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    line-height: 50px;
+
+}
+
+.list-item{
+    font-size: large;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    list-style: none;
+    cursor: pointer;
+   
+}
+
+.list-link{
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+.list-link:hover{
+    color: red;
+}
+.image-1{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.img-container-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+@media (max-width:650px){
+    .img-container-1{
+        flex-wrap: wrap;}
+    
+}
+.img-1{
+    width: 100%;
+}
+
+.card-img-1{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/17_fdc6dd7e-09cc-49bd-8deb-e5a055869662_large.jpg?v=1507169540);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-1:hover{
+    background: url(https://ss-ilove.myshopify.com/cdn/shop/products/10_6e0fa7cf-7348-4309-be87-c5a7e5b5b1ca_1024x1024@2x.jpg?v=1507169541);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-2{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/11_7757c23f-d83c-474e-8ce5-bb12922cde18_large.jpg?v=1507169221`);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-2:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/4_33d154be-55cd-4d19-91a5-23bbb214577e_large.jpg?v=1507169222);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-3{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/18_7907ad05-8984-40ca-b365-8e31e5490b4c_large.jpg?v=1507168872);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-3:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/7_ab111a00-5985-4d1e-9e46-150b6bc8e785_large.jpg?v=1507168874);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-4{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/16_3d418c0e-864e-4bd0-b51a-a793bbd973e5_large.jpg?v=1507169394);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-4:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/4_33d154be-55cd-4d19-91a5-23bbb214577e_large.jpg?v=1507169222);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-5{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/20_912c36cf-f663-4459-810b-e979dd76bfb1_large.jpg?v=1507169015);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-5:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/3_410adefb-c1e8-445d-a4bd-4853a21aeb0b_large.jpg?v=1507169017);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-6{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/14_7863fe2c-b2c9-49a3-803c-94ef6455b13f_large.jpg?v=1507168758);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-6:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/9_a1b9cd27-a9f2-43ec-8879-209ba09a51f5_large.jpg?v=1507168759);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-1{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/19_200008d5-4863-4790-a35f-c83133ed4fc4_large.jpg?v=1507169647);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-1:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/12_8659376b-192c-4c23-ab77-6c91c3928bfe_large.jpg?v=1507169648);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-2{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/16_3d418c0e-864e-4bd0-b51a-a793bbd973e5_large.jpg?v=1507169394);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-2:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/4_33d154be-55cd-4d19-91a5-23bbb214577e_large.jpg?v=1507169222);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-3{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/20_912c36cf-f663-4459-810b-e979dd76bfb1_large.jpg?v=1507169015);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-3:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/3_410adefb-c1e8-445d-a4bd-4853a21aeb0b_large.jpg?v=1507169017);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-4{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/17_fdc6dd7e-09cc-49bd-8deb-e5a055869662_large.jpg?v=1507169540);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-4:hover{
+    background: url(https://ss-ilove.myshopify.com/cdn/shop/products/10_6e0fa7cf-7348-4309-be87-c5a7e5b5b1ca_1024x1024@2x.jpg?v=1507169541);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-5{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/12_8659376b-192c-4c23-ab77-6c91c3928bfe_large.jpg?v=1507169648);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-5:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/17_fdc6dd7e-09cc-49bd-8deb-e5a055869662_large.jpg?v=1507169540);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-clothers-6{
+    height: 400px;
+    width: 400px;
+    background: url(https://ss-ilove.myshopify.com/cdn/shop/products/10_6e0fa7cf-7348-4309-be87-c5a7e5b5b1ca_1024x1024@2x.jpg?v=1507169541);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-clothers-6:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/12_8659376b-192c-4c23-ab77-6c91c3928bfe_large.jpg?v=1507169648);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+.card-img-dresses-1{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/1_df615e26-aa97-4a95-83cc-866bc4d32dc6_large.jpg?v=1506589149);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-1:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/2_f3b8e22e-e77f-4d46-9b8b-4a72a267c282_large.jpg?v=1506589151);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-dresses-2{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/10_f4dbcece-bde9-4e7a-80e6-e2dffc8945fe_large.jpg?v=1506584278);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-2:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/14_aabeab64-1e1b-41e3-a66e-7582da93eefd_large.jpg?v=1506584281);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-dresses-3{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/13_large.jpg?v=1506408475);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-3:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/2_large.jpg?v=1506408475);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-dresses-4{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/7_fcada86f-9fb7-464c-be42-2c4b45490e34_large.jpg?v=1506589056);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-4:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/11_ff903c77-9d50-4cbe-95f5-48a7adb555d9_large.jpg?v=1506589057);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-dresses-5{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/8_1c31e323-d9f8-4fa6-bff2-f89902d9dcd2_large.jpg?v=1506584169);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-5:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/9_8970832e-4585-4c17-92cf-23f946e68692_large.jpg?v=1506584171);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+.card-img-dresses-6{
+    height: 400px;
+    width: 400px;
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/6_6efbfab7-9c0d-41e3-b66c-60a82498aea4_large.jpg?v=1506408579);
+    background-position: center;
+    background-size: cover;
+    animation: anim-out 0.4s ease-in-out reverse;
+}
+.card-img-dresses-6:hover{
+    background: url(//ss-ilove.myshopify.com/cdn/shop/products/4_450a4b86-84f5-4a59-98d0-4e16c9620b24_large.jpg?v=1506408579);
+    background-position: center;
+    background-size: cover;
+    animation: anim-in 0.4s ease-in-out;
+
+}
+
+
+
+@keyframes anim-in {
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 0.9;
+    }
+}
+@keyframes anim-out {
+    from{
+        opacity:1;
+
+    }
+    to{
+        opacity: 0.9;
+    }
+}
+.cards-info-1{
+    margin: 1rem;
+    margin-top: 0%;
+    line-height: 0.4rem;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+#Items-3{
+   
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+   
+  
+  
+}
+#Items-2{
+   
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+   
+  
+  
+}
+#Items-1{
+   
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+       
+      
+      
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: animate 0.5s ease-in-out;
+    flex-wrap: wrap;
+    
+   
+}
+.cards-container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cards-container-blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.cards-container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: animate 0.5s ease-in-out;
+    flex-wrap: wrap;
+   
+}
+.cards-container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: animate 0.5s ease-in-out;
+    flex-wrap: wrap;
+   
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cards-info{
+    margin: 3rem;
+    margin-top: 0%;
+    line-height: 0.3rem;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+.dilac{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(137,137,137);
+    
+  
+}
+.dilac:hover{
+   color: sandybrown;
+   
+   text-decoration: underline;
+}
+.cards-info-2{
+    margin: 2rem;
+}
+.date-1{
+    margin-left: 10.5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+}
+.date-2{
+    margin-left: 10.5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+}
+.date-3{
+    margin-left: 1rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+}
+
+.quote{
+    font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        font-size: 22px;
+}
+.quote:hover{
+    color:rgb(246, 103, 89) ;
+}
+.text{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight:400 ;
+    color:rgb(84, 84, 84)
+}
+.img-wrap{
+    margin-bottom: 1.5rem;
+}
+.search input[type=text] {
+    width: 500px;
+    height: 25px;
+    border: 2px solid white;
+}
+.search_2{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom:2rem;
+}
+.sub_btn{
+    text-decoration: none; 
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.sub_btn:hover{
+    color: sandybrown;
+    transform: translateX(-8px);
+
+}
+.footer-list{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+   
+
+}
+.items{
+    color:rgb(255,255,248) ;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 1.2rem;
+    cursor: pointer;
+    padding-right: 1.5rem;
+    margin-top: 20px;
+}
+.items:hover{
+    color: sandybrown;
+
+}
+#footer{
+    background-color: rgb(19,19,19);
+    height: 100%;
+    width: 100%;
+    padding-top: 3rem; 
+    padding-bottom:2rem ;
+}
+.items-1{
+    color:rgb(255,255,248) ;
+    margin-left: 29rem;
+    list-style: none;
+}
+.p-1{
+    color:rgb(106,120,133);
+    margin-left: 3.6rem;
+}
+.RevoTheme{
+    text-decoration: none;
+    color:rgb(246, 103, 89);
+   
+}
+.a-prod{
+    color: black;
+    text-decoration: none;
+}
+.hi{
+    cursor: pointer;
+}
+
+
+.prod-popup{ 
+    z-index: 1;
+    display: none;
+    width: 60vw;
+    height: 60vh;
+    background-color: inherit;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    animation: anim-appear 1.5s ease-in-out;
+
+}
+@keyframes anim-appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.prod-popup img{
+    width:40vw;
+    height: 20vw;
+    margin-right: 2rem;
+    
+}
+
+
+.popup-heading{
+    font-size: 2rem;
+    color: #464646;
+}
+.popup-price{
+    color:black;
+    font-size: 2rem;
+}
+.popup-text{
+   
+    color: #7E7E7E;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+.popup-body{
+    color: darkslategrey;
+}
+.popup-body-2{
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.popup-btn{
+    width:17vw;
+    height:6vh;
+    margin-top:.5rem;
+    background-color: #f66759;
+    border: 2px solid #f66759;
+    border-radius: 2rem;
+    color:white
+}
+.popup-btn:hover{
+    background-color: #01020D;
+}
